@@ -20,9 +20,8 @@ public class DividedRound extends Thread {
         String regex = "0+\\.0*1";
         if (precision.stripTrailingZeros().toPlainString().matches(regex))
             if (precision.compareTo(new BigDecimal("0.001")) < 0) {
-                System.out.println("""
-                        Too precise to calculate, which will take ages to finish!
-                        Set precise 0.001 by default.""");
+                System.out.println("Too precise to calculate, which will take ages to finish!" +
+                        "\nSet precise 0.001 by default.");
                 step = 0.001;
             } else
                 step = 1.0 / Math.pow(10, precision.toPlainString().split("\\.")[1].length());
