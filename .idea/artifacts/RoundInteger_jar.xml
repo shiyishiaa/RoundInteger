@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RoundInteger:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RoundInteger_jar</output-path>
+    <root id="archive" name="RoundInteger.jar">
+      <element id="module-output" name="RoundInteger" />
+    </root>
+  </artifact>
+</component>
